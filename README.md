@@ -1,5 +1,5 @@
 # Sms-Spam-Detection
-sms-classifier
+
 The project titled "SMS Classifier using Machine Learning" involves building a machine learning model to classify SMS messages as either spam or not spam (ham). This project follows a typical machine learning pipeline, including data preprocessing, exploratory data analysis (EDA), data analysis, and model building. Below, I'll describe the different steps involved in this project:
 
 1. Importing Libraries:
