@@ -5,9 +5,11 @@ The project titled "SMS Classifier using Machine Learning" involves building a m
 1. Importing Libraries:
 
 The project starts by importing necessary Python libraries such as Streamlit for creating a user interface, pickle for loading pre-trained models, NLTK for text preprocessing, and scikit-learn for building and using machine learning models.
+
 2. Loading Pre-Trained Models:
 
 The project loads pre-trained models, including a TF-IDF vectorizer (vectorizer.pkl) and a Multinomial Naive Bayes classifier (model.pkl) using the pickle module. These models were previously trained and saved.
+
 3. Text Preprocessing:
 
 The transform_text function is defined to preprocess the input SMS message. The preprocessing steps include:
@@ -16,10 +18,11 @@ The transform_text function is defined to preprocess the input SMS message. The 
 * Removing non-alphanumeric characters.
 * Removing stopwords (common words like "the," "and," "is") using NLTK's stopwords list.
 * Stemming words using the Porter Stemmer to reduce them to their root forms.
+  
 4. Streamlit User Interface:
-
 The Streamlit UI is set up with a title and a text input box for users to enter an SMS message they want to classify.
-5. Prediction:
+
+6. Prediction:
 
 When the "Predict" button is clicked, the following steps are executed:
 * Check if the input SMS message is empty and display an error message if it is.
@@ -27,6 +30,7 @@ When the "Predict" button is clicked, the following steps are executed:
 * Vectorize the preprocessed message using the TF-IDF vectorizer.
 * Use the pre-trained Multinomial Naive Bayes model to make a prediction on whether the SMS is spam or not.
 * Display the prediction result as "Spam" or "Not Spam" to the user.
+  
 6. Error Handling:
 
 The code includes error handling to catch and display any exceptions that may occur during prediction or model loading.
